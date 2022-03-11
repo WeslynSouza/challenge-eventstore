@@ -2,6 +2,8 @@
 
 This project was developed with SpringBoot, chosen because of the easy integration with other libraries, in the form of an API, in order to allow the input and output of data in a simple and easy way.
 
+A database was also implemented to store event information, in order to reduce the amount of information loaded in memory, using only the information that would be necessary, since we can work with an unlimited amount of events.
+
 ###Endpoints:
 
 Several endpoints were developed in this application, some of them focused on using the methods implemented from userStore and others from userIteretor.
@@ -39,3 +41,11 @@ To achieve a proper functioning of the application, some external libraries were
 
 
 * [Lombok](https://projectlombok.org) - Library focused on reducing code, through notations that facilitate the development of some classes. 
+
+###Project architecture:
+
+The project was developed in the MVC model due to the simple organization and easy understanding by
+other developers. Given this, a controller was created with the main endpoints of the application,
+the 'Event' class became a model and the 'EventStore' class was implemented as a service because of
+the methods that interact directly with the data store. Within the application structure, a Repository
+was also created to facilitate interaction with the database. 

@@ -27,7 +27,7 @@ public class EventStoreImpl implements EventStore{
     }
 
     @Override
-   public EventIterator query(String type, long startTime, long endTime){
+    public EventIterator query(String type, long startTime, long endTime){
         ArrayList<Event> eventList = eventRepository.findEvents(type, startTime, endTime);
         ArrayList<Long> eventIdList = new ArrayList<>();
 
@@ -38,6 +38,6 @@ public class EventStoreImpl implements EventStore{
         EventIterator eventIterator = new EventIteratorImpl(eventIdList, eventRepository);
 
         return eventIterator;
-   }
+    }
 
 }
