@@ -32,7 +32,7 @@ Several endpoints were developed in this application, some of them focused on us
 
 * GET - http://localhost:8081/EventStore/CloseIterator - used to close the iterator, clearing the memory data, through the eventIterator's 'close' method.
 
-### Libraries:
+## Libraries:
 
 To achieve a proper functioning of the application, some external libraries were also used, namely:
 
@@ -42,7 +42,7 @@ To achieve a proper functioning of the application, some external libraries were
 
 * [Lombok](https://projectlombok.org) - Library focused on reducing code, through notations that facilitate the development of some classes. 
 
-### Project architecture:
+## Project architecture:
 
 The project was developed in the MVC model due to the simple organization and easy understanding by
 other developers. Given this, a controller was created with the main endpoints of the application,
