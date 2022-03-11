@@ -82,12 +82,12 @@ public class EventIteratorImpl implements EventIterator{
                 throw new IllegalStateException("The list is over.");
             }
 
+            eventRepository.deleteById(eventIdList.get(position));
+            eventIdList.remove(eventIdList.get(position));
+
             if(position != 0){
                 position--;
             }
-
-            eventRepository.deleteById(eventIdList.get(position));
-            eventIdList.remove(position);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
