@@ -49,3 +49,7 @@ other developers. Given this, a controller was created with the main endpoints o
 the 'Event' class became a model and the 'EventStore' class was implemented as a service because of
 the methods that interact directly with the data store. Within the application structure, a Repository
 was also created to facilitate interaction with the database. 
+
+## Tests:
+
+The tests were performed using the Junit library. 2 files were created for the tests, one being focused on testing the features of our eventStore and the other focused on the iterator. With this, the main functionalities of the provided interfaces were tested and validated. 
