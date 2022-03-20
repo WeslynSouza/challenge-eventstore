@@ -44,11 +44,7 @@ To achieve a proper functioning of the application, some external libraries were
 
 ## Project architecture:
 
-The project was developed in the MVC model due to the simple organization and easy understanding by
-other developers. Given this, a controller was created with the main endpoints of the application,
-the 'Event' class became a model and the 'EventStore' class was implemented as a service because of
-the methods that interact directly with the data store. Within the application structure, a Repository
-was also created to facilitate interaction with the database. 
+The project was developed in the MVC model due to the simple organization and easy understanding by other developers. Given this, a controller was created with the main endpoints of the application, the 'Event' class became a model and the 'EventStore' class was implemented as a service because of the methods that interact directly with the data store. Within the application structure, a Repository was also created to facilitate interaction with the database. 
 
 ## Tests:
 
